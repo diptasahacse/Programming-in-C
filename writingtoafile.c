@@ -3,10 +3,13 @@ int main()
 {
   FILE *file1;
 
-    file1 = fopen("text.txt","w"); //when i using a mode..if any file was not cteated,then new file will be create..if any file was already cteated then it wile be write from end line in the file
-    char c[20];
+    file1 = fopen("text.txt","a");
+    char name[30];
+    char uniname[40];
+    int age;
 
-    int length = strlen(c);
+
+
 
     if(file1 == NULL)
     {
@@ -16,11 +19,18 @@ int main()
     else
     {
         printf("File Created\n");
+
         printf("Enter Your Name =");
-        gets(c);    //get data from user
+        gets(name);    //get data from user
+
+        printf("Enter Your Uni Name =");
+        gets(uniname);    //get data from user
+
+        printf("Enter Your Age =");
+        scanf("%d",&age);   //get data from user
 
 
-        fputs(c,file1); //put string
+        fprintf(file1,"Name = %s \nUniversity Name = %s\nAge = %d",name,uniname,age);
         printf("File Write Created");
         fclose(file1);
 
@@ -31,4 +41,3 @@ int main()
 
     getch();
 }
-
