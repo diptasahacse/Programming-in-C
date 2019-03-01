@@ -73,3 +73,14 @@ int main()
 
     getch();
 }
+
+/*
+student_record.txt
+
+Name	Dep_Name	Att_of_JAVA	Att_of_C	Att_of_C++	Att_of_Python    Avg_Att    Eligable_for_Exam
+----	--------	-----------	--------	----------	--------------	-------     ----------------
+
+
+*/
+
+
