@@ -20,7 +20,7 @@ int main()
 
         while(!feof(file1))
         {
-            ch = getc(file1);
+            ch = fgetc(file1);
             printf("%c",ch);
 
         }
