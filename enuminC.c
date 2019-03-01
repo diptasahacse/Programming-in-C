@@ -1,4 +1,6 @@
 #include<stdio.h>
+
+//enum is a custom datatype which consist of integer constant...this look like a structure and union;
 enum Week_Library
 {
 
